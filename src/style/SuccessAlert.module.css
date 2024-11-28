@@ -1,0 +1,41 @@
+.successAlert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde oscuro */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.closeButton {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #155724;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+    color: #0b2c1f;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,101 @@
+.formLogo {
+    position: relative; /* O absolute */
+    top: -10px; /* Mueve hacia abajo */
+    left: 30px; /* Mueve hacia la derecha */
+    
+    height: 80px;
+    width: auto; /* Mantén las proporciones del logo */
+    display: inline-block; /* Asegura que el logo sea tratado como un elemento en línea */
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 0; /* Sin bordes redondeados */
+    padding: 0; /* Sin espacio interno */
+    box-shadow: none; /* Elimina la sombra */
+}
+
+/* Contenedor general del logo y los detalles */
+.formHeaderRight {
+    display: flex; /* Alineación horizontal */
+    flex-direction: column; /* Alineación predeterminada en columna */
+    align-items: flex-end; /* Alineación hacia la derecha */
+}
+
+/* Contenedor para el texto y el ID en la misma fila */
+.formLogoDetails {
+    display: flex; /* Alineación en fila */
+    align-items: center; /* Centrado vertical */
+    gap: 20px; /* Espaciado entre el texto y el ID */
+}
+
+/* Texto del logo */
+.formLogoText {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3); /* Color gris claro */
+}
+
+/* ID del logo */
+.formLogoId {
+    position: relative; /* O absolute */
+   
+    left: -8px; /* Mueve hacia la derecha */
+
+
+    font-size: 16px;
+    color: #cc3333; /* Rojo oscuro */
+    font-weight: lighter;
+}
+
+.tableCell {
+    background-color:#444c5c !important; /* Fondo rojo */
+    border: 2px solid black !important; /* Bordes negros */
+    color: black !important; /* Texto blanco */
+    text-align: center !important; /* Texto centrado */
+}
+
+
+
+.inputCell {
+    background-color: red; /* Fondo blanco para inputs */
+    text-align: center; /* Centrado del texto */
+    border: 1px solid black; /* Bordes negros */
+}
+
+
+/* Clase para los inputs del encabezado */
+/* Clase para los inputs y textareas del encabezado */
+.inputHeader {
+    background-color: #5c6b7a !important; /* Fondo gris azulado suave */
+    border: 1px solid #444c5c !important; /* Borde gris oscuro */
+    color: white !important; /* Texto blanco */
+    text-align: center !important; /* Centrado del texto */
+    padding: 10px !important; /* Espaciado interno */
+    border-radius: 4px !important; /* Bordes ligeramente redondeados */
+}
+
+/* Clase para los labels del encabezado */
+.labelHeader {
+    color: white !important; /* Texto blanco para contraste con fondo oscuro */
+}
+
+
+.textareaHeader{
+
+    background-color: #5c6b7a !important; /* Fondo gris azulado suave */
+    border: 1px solid #444c5c !important; /* Borde gris oscuro */
+    color: white !important; /* Texto blanco */
+   
+    padding: 10px !important; /* Espaciado interno */
+    border-radius: 4px !important; /* Bordes ligeramente redondeados */
+
+}
+
+
+
+/* Clase específica para los inputs con fondo rojo */
+.inputTotal {
+    background-color: #5c6b7a !important; /* Fondo rojo */
+    border: 1px solid #444c5c !important; /* Borde gris oscuro para mantener consistencia */
+    color: white !important; /* Texto blanco para buen contraste */
+    text-align: center !important; /* Centrar el texto */
+    padding: 10px !important; /* Espacio interno para comodidad */
+    border-radius: 4px !important; /* Bordes ligeramente redondeados */
+}

@@ -1,0 +1,134 @@
+/* Variables CSS para colores y configuraciones reutilizables */
+.bienvenida-container {
+    --color-primary: #3a6186; /* Azul oscuro con un toque grisáceo */
+    --color-secondary: #89253e; /* Violeta oscuro con un tono cálido */
+    --background-light: rgba(255, 255, 255, 0.3);
+    --background-hover: rgba(255, 255, 255, 0.4);
+
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* Títulos */
+.bienvenida-title {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.bienvenida-subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Botón para abrir el menú */
+.btn-toggle-menu {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 20px 0;
+}
+
+.btn-toggle-menu:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.05);
+}
+
+/* Menú desplegable */
+.custom-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.custom-dropdown li {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-dropdown li:hover {
+    background-color: var(--dropdown-hover);
+    color: #000;
+}
+
+/* Contenedor de la foto del usuario */
+.user-photo-container {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    text-align: center;
+}
+
+.photo-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.user-photo {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-input {
+    display: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .user-photo-container {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bienvenida-container {
+        padding: 1rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

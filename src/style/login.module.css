@@ -1,0 +1,141 @@
+/* Contenedor principal del login */
+.loginContainer {
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #1f4037; /* Verde oscuro con tono natural */
+    display: flex; /* Para centrar el formulario */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 2rem;
+}
+
+
+/* Tarjeta del login */
+.loginCard {
+    background-color: #d9d9d9; /* Gris ceniza */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeInDown 0.8s ease; /* Efecto de entrada */
+}
+
+/* Títulos */
+.loginCard h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.5rem;
+    color: #6a11cb;
+}
+
+/* Campos de texto */
+.loginCard input[type="text"],
+.loginCard input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loginCard input[type="text"]:focus,
+.loginCard input[type="password"]:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.4);
+}
+
+/* Botón */
+.loginCard button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.loginCard button[type="submit"]:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+.loginCard button[type="submit"]:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Alertas */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 0.5s ease;
+}
+
+.alert.alert-danger {
+    background: #ff6b6b;
+    color: white;
+}
+
+.alert.alert-success {
+    background: #51cf66;
+    color: white;
+}
+
+.alert .btn-close {
+    float: right;
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sección de registro */
+.registerSection {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.registerLink {
+    color: #2575fc;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.registerLink:hover {
+    color: #6a11cb;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

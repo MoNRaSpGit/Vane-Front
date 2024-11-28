@@ -1,0 +1,46 @@
+/* Contenedor principal del footer */
+.footer {
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 1rem;
+    margin: 2rem auto; /* Centra el footer horizontalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 800px; /* Límite máximo del ancho */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Contenedor de los elementos del footer */
+.footerContainer {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 1rem; /* Espaciado entre elementos */
+}
+
+/* Elementos individuales del footer */
+.footerItem {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* Iconos del footer */
+.footerIcon {
+    margin-right: 0.5rem; /* Espacio entre el ícono y el texto */
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    color: #007bff; /* Color azul para los íconos */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .footerItem {
+        justify-content: center; /* Centra los íconos y textos */
+    }
+}

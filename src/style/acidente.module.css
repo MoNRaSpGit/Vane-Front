@@ -1,0 +1,144 @@
+.acidente-container {
+    --color-primary: #264653; /* Verde oscuro */
+    --color-secondary: #2a5d60; /* Verde oliva apagado */
+    --background-light: rgba(38, 70, 83, 0.2); /* Verde oliva claro */
+    --background-hover: rgba(255, 255, 255, 0.15); /* Blanco tenue */
+     
+    
+    
+
+
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+
+
+.acidente-label {
+    color: #333;
+    /* Ajusta el color oscuro */
+    font-size: 1rem;
+    /* Tamaño de fuente ajustado */
+    font-weight: bold;
+    /* Resaltado */
+    margin-bottom: 0.5rem;
+    /* Separación del campo */
+    display: block;
+    /* Garantiza que esté encima del input */
+}
+
+
+/* Títulos */
+.acidente-title {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    animation: fadeInDown 1s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.acidente-alert {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--background-hover);
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+.acidente-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+}
+
+.acidente-btn:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.05);
+}
+
+/* Contenedor del formulario */
+.acidente-form-container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .acidente-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .acidente-container {
+        padding: 0.5rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.acidente-form-container input,
+.acidente-form-container textarea,
+.acidente-form-container select {
+    background-color: #264653 !important; /* Verde oscuro sólido, igual que el contenedor principal */
+    color: #dcdcdc; /* Texto gris claro */
+    border: 1px solid #777; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 0.5rem; /* Espaciado interno */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+
+
+
+
+
+
+/* Cambiar fondo al enfocar */
+.acidente-form-container input:focus,
+.acidente-form-container textarea:focus,
+.acidente-form-container select:focus {
+    background-color: #b12a2a; /* Gris más claro */
+    border-color: #999; /* Borde más oscuro */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra sutil */
+}
