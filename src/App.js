@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route,Navigate  } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import ControlOperacionalForm from "./componentes/ControlOperacionalForm";
 import Admin from "./componentes/Admin";
 import Botiquin from "./componentes/Botiquin";
@@ -13,19 +13,17 @@ function App() {
     const { isAuthenticated } = useSelector((state) => state.authLog); // Accedemos al estado de autenticación
 
     return (
-        <Router>
-            <div className="App">
-                <Routes>
-                    <Route path="/" element={isAuthenticated ? <Navigate to="/bienvenida" /> : <Login />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/resultado" element={<Admin />} />
-                    <Route path="/control-operacional" element={<ControlOperacionalForm />} />
-                    <Route path="/botiquin" element={<Botiquin />} />
-                    <Route path="/acidente" element={<Acidente />} />
-                    <Route path="/bienvenida" element={<Bienvenida />} /> {/* Ruta para Bienvenida */}
-                </Routes>
-            </div>
-        </Router>
+        <div className="App">
+            <Routes>
+                <Route path="/" element={isAuthenticated ? <Navigate to="/bienvenida" /> : <Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/resultado" element={<Admin />} />
+                <Route path="/control-operacional" element={<ControlOperacionalForm />} />
+                <Route path="/botiquin" element={<Botiquin />} />
+                <Route path="/acidente" element={<Acidente />} />
+                <Route path="/bienvenida" element={<Bienvenida />} /> {/* Ruta para Bienvenida */}
+            </Routes>
+        </div>
     );
 }
 
