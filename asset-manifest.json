@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MoNRaSpGit/Vane-Front/static/css/main.fcc246be.css",
-    "main.js": "/MoNRaSpGit/Vane-Front/static/js/main.f6b34b2f.js",
-    "static/media/logoVane.png": "/MoNRaSpGit/Vane-Front/static/media/logoVane.75b595138eba7aa3292e.png",
-    "index.html": "/MoNRaSpGit/Vane-Front/index.html",
-    "main.fcc246be.css.map": "/MoNRaSpGit/Vane-Front/static/css/main.fcc246be.css.map",
-    "main.f6b34b2f.js.map": "/MoNRaSpGit/Vane-Front/static/js/main.f6b34b2f.js.map"
+    "main.css": "/Vane-Front/static/css/main.fcc246be.css",
+    "main.js": "/Vane-Front/static/js/main.2a75ab95.js",
+    "static/media/logoVane.png": "/Vane-Front/static/media/logoVane.75b595138eba7aa3292e.png",
+    "index.html": "/Vane-Front/index.html",
+    "main.fcc246be.css.map": "/Vane-Front/static/css/main.fcc246be.css.map",
+    "main.2a75ab95.js.map": "/Vane-Front/static/js/main.2a75ab95.js.map"
   },
   "entrypoints": [
     "static/css/main.fcc246be.css",
-    "static/js/main.f6b34b2f.js"
+    "static/js/main.2a75ab95.js"
   ]
 }
