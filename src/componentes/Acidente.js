@@ -66,7 +66,7 @@ const Acidente = () => {
                         />
                     </div>
                     <button className={styles["acidente-btn"]} onClick={handleSubmit}>
-                        Enviar Todos
+                        Enviar Todoss
                     </button>
                 </>
             )}
